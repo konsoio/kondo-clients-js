@@ -1,0 +1,38 @@
+{
+  "name": "@konso/logs",
+  "version": "0.0.1",
+  "description": "Client for konso.io logs",
+  "main": "dist/index.cjs",
+  "types": "src/index.d.ts",
+  "source": "src/index.js",
+  "exports": {
+    ".": {
+      "umd": "./dist/index.umd.js",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.module.js"
+    }
+  },
+  "author": "Danie Belchenko <daniel.belchenko@indevlabs.de>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "jest": "^27.1.0",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@types/events": "^3.0.0",
+    "@types/node": "^16.7.10",
+    "babel-jest": "^27.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "microbundle": "^0.13.3",
+    "ts-jest": "^27.0.5"
+  },
+  "scripts": {
+    "build": "microbundle build --raw --generateTypes false --no-compress",
+    "test": "node node_modules/.bin/jest jest --clearCache && node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles"
+  }
+}

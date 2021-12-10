@@ -1,0 +1,31 @@
+{
+  "name": "@konso/messaging",
+  "version": "0.0.1",
+  "description": "@konso client for messaging",
+  "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "types": "src/index.d.ts",
+  "source": "src/index.js",
+  "exports": {
+    ".": {
+      "umd": "./dist/index.umd.js",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.module.js"
+    }
+  },
+  "dependencies": {
+    "jest": "^27.1.1",
+    "node-fetch": "^3.0.0"
+  },
+  "scripts": {
+    "build": "microbundle build --raw --generateTypes false",
+    "test": "node node_modules/.bin/jest jest --clearCache && node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.3"
+  }
+}

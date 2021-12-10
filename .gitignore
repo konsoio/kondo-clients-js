@@ -1,0 +1,12 @@
+.vscode
+client
+logging
+sandbox
+metrics_old
+# value-tracking
+reps
+test
+@konso.paw
+**/**/node_modules
+**/**/coverage
+**/**/dist
