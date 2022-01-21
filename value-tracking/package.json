@@ -1,5 +1,5 @@
 {
-  "name": "value-tracking",
+  "name": "@konso/value-tracking",
   "version": "0.0.1",
   "description": "Value tracking library for @konso",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
