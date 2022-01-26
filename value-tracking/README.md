@@ -20,6 +20,9 @@ const tracker = createValueTrackingClient({
   appName: 'test',
 })
 
+tracker.on(LogEvents.onError, (error) => console.log(error));
+tracker.on(LogEvents.onSuccessful, (message) => console.log(message));
+
 function trackerMiddleware(client) {
   if (!client) {
     throw new Error('you should provide client for value-tracking')
@@ -72,3 +75,16 @@ track(eventId: string, extraOptions: ValueTrackingExtraOptions)
 |--------------|--------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | eventId      | string | true     |                                                                                                                                                           |
 | extraOptions | Object | true     | {<br/>correlationId?: string,<br/>value?: string,<br/>custom?: string,<br/>ip?: string,<br/>browser?: string,<br/>user?: string,<br/>owner?: string<br/>} |
+
+## on
+
+```typescript
+on(eventName: LogEvents, callback: (text: string) => void);
+```
+
+###Parameters
+
+| Parameter | Type     | Required | Value                                                |
+|-----------|----------|----------|------------------------------------------------------|
+| eventName | string   | true     | 'onSuccessful', 'onError' or keys of LogEvent object |
+| callback  | function | true     | (text: string) => void                               |
