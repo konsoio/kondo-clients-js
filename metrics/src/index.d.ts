@@ -1,5 +1,9 @@
 import { EventEmitter } from 'events';
 
+export enum LogEvents {
+    "onSuccessful" = "onSuccessful",
+    "onError" = "onError"
+}
 
 export type MetricsOptions = {
     apiKey: string;

@@ -14,7 +14,7 @@ tracker.on(LogEvents.onSuccessful, (message) => console.log(message));
 
 function trackerMiddleware(client) {
   if (!client) {
-    throw new Error('you should provide client for metrics')
+    throw new Error('you should provide client for value-tracking')
   }
 
   return function (req, res, next) {
