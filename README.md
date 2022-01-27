@@ -1,10 +1,10 @@
 # konso-clients-js
 
 
-### @konso/value-tracking [value-tracking](./value-tracking/Readme.md)
+### @konso/value-tracking [value-tracking](./value-tracking/README.md)
 
-### @konso/metrics [metrics](./metrics/Readme.md)
+### @konso/metrics [metrics](./metrics/README.md)
 
-### @konso/messaging [messaging](./messaging/Readme.md)
+### @konso/messaging [messaging](./messaging/README.md)
 
-### @konso/logs [logs](./logs/Readme.md)
+### @konso/logs [logs](./logs/README.md)
