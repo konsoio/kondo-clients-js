@@ -1,5 +1,5 @@
 {
-  "name": "@konso/logs",
+  "name": "@konso/logging",
   "version": "0.0.1",
   "description": "Client for konso.io logs",
   "main": "dist/index.cjs",

@@ -1,6 +1,5 @@
 .vscode
 client
-logging
 sandbox
 metrics_old
 # value-tracking
@@ -10,3 +9,4 @@ test
 **/**/node_modules
 **/**/coverage
 **/**/dist
+.idea

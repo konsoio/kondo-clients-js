@@ -1,17 +1,17 @@
-# logs
+# Logging
 
 ## Installation
 
 ---
 
-`npm i @konso/logs`
+`npm i @konso/logging`
 
 ## Example
 
 ---
 
 ```javascript
-import { createClient, LogEvents } from "@konso/logs";
+import { createClient, LogEvents } from "@konso/logging";
 
 let client = createClient({
   apiURL: 'https://devapis.konso.io',
@@ -28,7 +28,7 @@ client.log('message', 'error')
 
 ## createClient
 
-createClient - the function takes a parameters object and returns an instance of the Log class
+createClient - the function takes a parameters object and returns an instance of the Logging class
 
 ```typescript
 const client = createClient({
