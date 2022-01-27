@@ -76,14 +76,14 @@ const client = createMetricsClient({
 startMeasure(name: string) : (extraOptions: MetricsExtraOptions) => void;
 ```
 
-###Parameters
+### Parameters
 
 | Parameter | Type   | Required | Value |
 |-----------|--------|----------|-------|
 | name      | string | true     |       |
 
 
-###Parameters for the returned function
+### Parameters for the returned function
 
 | Parameter    | Type   | Required | Value                                                                              |
 |--------------|--------|----------|------------------------------------------------------------------------------------|
@@ -96,7 +96,7 @@ startMeasure(name: string) : (extraOptions: MetricsExtraOptions) => void;
 on(eventName: LogEvents, callback: (text: string) => void);
 ```
 
-###Parameters
+### Parameters
 
 | Parameter | Type     | Required | Value                                                |
 |-----------|----------|----------|------------------------------------------------------|

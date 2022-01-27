@@ -61,7 +61,7 @@ const client = createMessagingClient({
 sendMessage(extraOptions: MessagingExtraOptions)
 ```
 
-###params
+### Parameters
 
 | Parameter    | Type   | Required | Value                                                                                                                                                                                                                                                        |
 |--------------|--------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ sendMessage(extraOptions: MessagingExtraOptions)
 on(eventName: LogEvents, callback: (text: string) => void);
 ```
 
-###Parameters
+### Parameters
 
 | Parameter | Type     | Required | Value                                                |
 |-----------|----------|----------|------------------------------------------------------|

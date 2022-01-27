@@ -69,7 +69,7 @@ const tracker = createValueTrackingClient({
 track(eventId: string, extraOptions: ValueTrackingExtraOptions)
 ```
 
-###Parameters
+### Parameters
 
 | Parameter    | Type   | Required | Value                                                                                                                                                     |
 |--------------|--------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ track(eventId: string, extraOptions: ValueTrackingExtraOptions)
 on(eventName: LogEvents, callback: (text: string) => void);
 ```
 
-###Parameters
+### Parameters
 
 | Parameter | Type     | Required | Value                                                |
 |-----------|----------|----------|------------------------------------------------------|
