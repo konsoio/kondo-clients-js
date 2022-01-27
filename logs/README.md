@@ -58,7 +58,7 @@ const client = createClient({
 on(eventName: LogEvents, callback: (text: string) => void);
 ```
 
-###Parameters
+### Parameters
 
 | Parameter | Type     | Required | Value                                                |
 |-----------|----------|----------|------------------------------------------------------|
@@ -71,7 +71,7 @@ on(eventName: LogEvents, callback: (text: string) => void);
 log(message: MessageTypes, logLevel?: LogLevel | MessageTypes, extraOptions?: ExtraOptions): PromiseLike<void>;
 ```
 
-###Parameters
+### Parameters
 
 | Parameter    | Type                                         | Default | Required | Value                                        |
 |--------------|----------------------------------------------|---------|----------|----------------------------------------------|
