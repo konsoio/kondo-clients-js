@@ -5,7 +5,7 @@ import { EventEmitter } from "events";
 import { isError } from "./helpers.js";
 
 export function createClient (options) {
-    return new Logs(options)
+    return new Logging(options)
 }
 
 export const LogEvents = {
@@ -24,12 +24,12 @@ export const LogLevel = {
 }
 
 
-class Logs extends EventEmitter {
+class Logging extends EventEmitter {
     baseConfig = {};
     baseGlobalOptions = {};
     baseRequestHeaders = {};
     requestURL;
-    
+
     constructor(config) {
         if(!config ||!config.apiKey || !config.apiURL || !config.bucketId) {
             throw new Error("You should provide: apiKey, apiURL, bucketID");
@@ -91,7 +91,7 @@ class Logs extends EventEmitter {
                 preparedExtraOptions[extra] = extraOptions[extra]
             }
         }
-        
+
         let logRequestBody = {
             message: preparedMessage,
             level: logLevel,
@@ -114,7 +114,7 @@ class Logs extends EventEmitter {
             //TODO: add custom Error function for describe errors
             this.emit(LogEvents.onError, `ERROR: ${error.message} / ${error.response}`)
         }
-        
+
     }
 
     async callAPIGateway(requestURL, requestOptions) {
