@@ -1,7 +1,15 @@
 {
   "name": "@konso/metrics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client for metrics",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konsoio/konso-clients-js/tree/main/metrics"
+  },
+  "bugs": {
+    "url": "https://github.com/konsoio/konso-clients-js/issues"
+  },
+  "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/metrics",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
   "private": true,

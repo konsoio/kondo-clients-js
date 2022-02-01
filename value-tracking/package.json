@@ -1,7 +1,15 @@
 {
   "name": "@konso/value-tracking",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Value tracking library for @konso",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konsoio/konso-clients-js/tree/main/value-tracking"
+  },
+  "bugs": {
+    "url": "https://github.com/konsoio/konso-clients-js/issues"
+  },
+  "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/value-tracking",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
   "private": true,
