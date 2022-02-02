@@ -1,10 +1,46 @@
 # konso-clients-js
 
+JavaScript libraries for [Konso App](https://app.konso.io)
 
-### [@konso/value-tracking](./value-tracking/README.md)
+✅ Developed / Developing by [InDevLabs](https://indevlabs.de)
 
-### [@konso/metrics](./metrics/README.md)
+📖 Documentation and API reference can be found [here](https://docs.konso.io)
 
-### [@konso/messaging](./messaging/README.md)
+# Installation
 
-### [@konso/logging](./logging/README.md)
+⚠️ Prerequisites: *Konso account and created bucket*
+
+In order to use this library, you need reference it in your project.
+
+More about [concepts](https://docs.konso.io/get-started/concepts)
+
+### Value Tracking
+
+```
+npm i @konso/value-tracking
+```
+
+[Read more](./value-tracking/Readme.md)
+
+### Metrics 
+
+```
+npm i @konso/metrics
+
+```
+[Read more](./metrics/Readme.md)
+
+### Logs
+
+```
+npm i @konso/logging
+```
+[Read more](./logs/Readme.md)
+
+### Messaging
+
+```
+npm i @konso/messaging
+```
+
+[Read more](./messaging/Readme.md)
