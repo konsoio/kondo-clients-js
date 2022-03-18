@@ -26,7 +26,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "jest": "^27.1.0",
     "node-fetch": "^3.0.0"
   },
   "devDependencies": {
@@ -37,7 +36,8 @@
     "babel-jest": "^27.1.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "microbundle": "^0.13.3",
-    "ts-jest": "^27.0.5"
+    "ts-jest": "^27.0.5",
+    "jest": "^27.1.0"
   },
   "scripts": {
     "build": "microbundle build --raw --generateTypes false --no-compress",

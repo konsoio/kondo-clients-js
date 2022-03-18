@@ -26,7 +26,6 @@
     }
   },
   "dependencies": {
-    "jest": "^27.1.1",
     "node-fetch": "^3.0.0"
   },
   "scripts": {
@@ -34,6 +33,7 @@
     "test": "node node_modules/.bin/jest jest --clearCache && node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles"
   },
   "devDependencies": {
-    "microbundle": "^0.13.3"
+    "microbundle": "^0.13.3",
+    "jest": "^27.1.1"
   }
 }
