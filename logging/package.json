@@ -1,6 +1,6 @@
 {
   "name": "@konso/logging",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Client for konso.io logs",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   },
   "author": "Danie Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "type": "module",
   "dependencies": {
     "node-fetch": "^3.0.0"
