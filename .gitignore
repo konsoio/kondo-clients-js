@@ -4,6 +4,7 @@ sandbox
 metrics_old
 # value-tracking
 reps
+test-folder
 test
 @konso.paw
 **/**/node_modules
