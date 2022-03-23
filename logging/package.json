@@ -15,7 +15,6 @@
   "types": "./lib/index.d.ts",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
-  "private": true,
   "exports": {
     ".": {
       "require": "./lib/index.js",
