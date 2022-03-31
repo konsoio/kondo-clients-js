@@ -1,15 +1,15 @@
 {
-  "name": "@konso/messaging",
-  "version": "0.0.4",
-  "description": "@konso client for messaging",
+  "name": "@konso/value-tracking",
+  "version": "0.0.5",
+  "description": "Value tracking library for @konso",
   "repository": {
     "type": "git",
-    "url": "https://github.com/konsoio/konso-clients-js/tree/main/messaging"
+    "url": "https://github.com/konsoio/konso-clients-js/tree/main/value-tracking"
   },
   "bugs": {
     "url": "https://github.com/konsoio/konso-clients-js/issues"
   },
-  "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/messaging",
+  "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/value-tracking",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
   "main": "./lib/index.js",

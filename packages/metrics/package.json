@@ -1,6 +1,6 @@
 {
   "name": "@konso/metrics",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Client for metrics",
   "repository": {
     "type": "git",
