@@ -12,7 +12,6 @@
   "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/value-tracking",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
-  "private": true,
   "main": "./lib/index.js",
   "types": "lib/index.d.ts",
   "source": "lib/index.js",
