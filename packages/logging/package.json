@@ -4,12 +4,12 @@
   "description": "Client for konso.io logs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/konsoio/konso-clients-js/tree/release/logging"
+    "url": "https://github.com/konsoio/konso-clients-js/main/packages/logging"
   },
   "bugs": {
     "url": "https://github.com/konsoio/konso-clients-js/issues"
   },
-  "homepage": "https://github.com/konsoio/konso-clients-js/tree/release/logging",
+  "homepage": "https://github.com/konsoio/konso-clients-js/main/packages/logging",
   "source": "./lib/index.js",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

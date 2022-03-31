@@ -20,7 +20,7 @@ More about [concepts](https://docs.konso.io/get-started/concepts)
 npm i @konso/value-tracking
 ```
 
-[Read more](./value-tracking/Readme.md)
+[Read more](./packages/value-tracking/Readme.md)
 
 ### Metrics 
 
@@ -28,14 +28,14 @@ npm i @konso/value-tracking
 npm i @konso/metrics
 
 ```
-[Read more](./metrics/Readme.md)
+[Read more](./packages/metrics/Readme.md)
 
 ### Logs
 
 ```
 npm i @konso/logging
 ```
-[Read more](./logs/Readme.md)
+[Read more](./packages/logs/Readme.md)
 
 ### Messaging
 
@@ -43,4 +43,4 @@ npm i @konso/logging
 npm i @konso/messaging
 ```
 
-[Read more](./messaging/Readme.md)
+[Read more](./packages/messaging/Readme.md)

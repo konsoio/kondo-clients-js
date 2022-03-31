@@ -4,12 +4,12 @@
   "description": "@konso client for messaging",
   "repository": {
     "type": "git",
-    "url": "https://github.com/konsoio/konso-clients-js/tree/main/messaging"
+    "url": "https://github.com/konsoio/konso-clients-js/tree/main/packages/messaging"
   },
   "bugs": {
     "url": "https://github.com/konsoio/konso-clients-js/issues"
   },
-  "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/messaging",
+  "homepage": "https://github.com/konsoio/konso-clients-js/tree/main/packages/messaging",
   "author": "Daniel Belchenko <daniel.belchenko@indevlabs.de>",
   "license": "MIT",
   "main": "./lib/index.js",
