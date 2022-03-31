@@ -1,4 +1,4 @@
-import { createClient, LogEvents } from "../src/index.js";
+import { createClient, LogEvents } from "../lib/index.mjs";
 
 let client = createClient({
     apiURL: 'https://devapis.konso.io',

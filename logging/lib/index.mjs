@@ -1,7 +1,1 @@
-import { createClient, LogEvents, LogLevel} from "./index.js";
-
-export {
-    createClient,
-    LogEvents,
-    LogLevel
-}
+export { createClient, LogEvents, LogLevel} from "./index.js";

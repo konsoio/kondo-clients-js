@@ -1,0 +1,1 @@
+export { createMetricsClient, LogEvents } from "./index.js";

@@ -1,4 +1,4 @@
-import { createMessagingClient, LogEvents } from "../../messaging/src/index.js";
+import { createMessagingClient, LogEvents } from "../../messaging/lib/index.mjs";
 
 let client = createMessagingClient({
     apiURL: 'https://devapis.konso.io',
@@ -14,3 +14,5 @@ client.sendMessage({
     recepients: [ 'alex.lvovich@indevalbs.de'],
     messageType: 1
 })
+
+// import { createMessagingClient } from "../lib/index.mjs";

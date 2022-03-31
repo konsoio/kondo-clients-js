@@ -1,5 +1,10 @@
 import { EventEmitter } from 'events';
 
+export enum LogEvents {
+    "onSuccessful" = "onSuccessful",
+    "onError" = "onError"
+}
+
 export enum MessageTypes {
     Email = 1,
     SMS = 2,
@@ -18,7 +23,7 @@ export type MessagingExtraOptions = {
 }
 
 export class Messaging extends EventEmitter{
-    sendMessage(extraOptions: MessagingExtraOptions)
+    sendMessage(extraOptions: MessagingExtraOptions): Promise<void>
 }
 
 

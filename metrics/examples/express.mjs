@@ -1,5 +1,5 @@
 import express from 'express';
-import { createMetricsClient, LogEvents } from "../";
+import { createMetricsClient, LogEvents } from "../lib/index.mjs";
 
 const client = createMetricsClient({
     apiURL: 'https://devapis.konso.io',

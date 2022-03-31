@@ -1,16 +1,17 @@
-import { EventEmitter  } from "events";
-import fetch from "node-fetch";
+const { EventEmitter  } = require("events");
+const fetch = require("node-fetch");
 
-export function createMessagingClient(options) {
-    return new Messaging(options)
+function createValueTrackingClient(options) {
+    return new ValueTracking(options)
 }
 
-export const LogEvents = {
+const LogEvents = {
     'onSuccessful': 'onSuccessful',
     'onError': 'onError'
 }
 
-class Messaging extends EventEmitter {
+
+class ValueTracking extends EventEmitter {
     baseConfig = {};
     baseGlobalOptions = {};
     baseRequestHeaders = {};
@@ -28,13 +29,13 @@ class Messaging extends EventEmitter {
             this.baseConfig[configEntry] = config[configEntry]
         }
 
-        for (let extraOption of ['tags', 'env', 'appName']) {
+        for (let extraOption of ['currency', 'custom', 'appName']) {
             if (extraOption in config) {
                 this.baseGlobalOptions[extraOption] = config[extraOption]
             }
         }
 
-        this.requestURL = [this.baseConfig.apiURL, "v1/messaging", this.baseConfig.bucketId].join("/");
+        this.requestURL = [this.baseConfig.apiURL, "v1/value_tracking", this.baseConfig.bucketId].join("/");
         this.baseRequestHeaders = {
             'x-api-key': this.baseConfig.apiKey
         }
@@ -52,16 +53,18 @@ class Messaging extends EventEmitter {
         }
     }
 
-    async sendMessage(extraOptions = {}) {
+    async track(eventId, extraOptions = {}) {
         let preparedExtraOptions = {};
+        // add validator
 
-        for(let extra of ['recipients', 'messageType', 'subject', 'plainBase64Body', 'htmlBase64Body', 'delay', 'tags', 'correlationId']) {
+        for(let extra of ['correlationId', 'value', 'custom', 'ip', 'browser', 'owner']) {
             if(extra in extraOptions) {
                 preparedExtraOptions[extra] = extraOptions[extra]
             }
         }
 
         let logRequestBody = {
+            eventId,
             timeStamp: Math.floor(Date.now() / 1000),
             ...this.baseGlobalOptions,
             ...preparedExtraOptions,
@@ -75,8 +78,11 @@ class Messaging extends EventEmitter {
 
         try {
             await this.callAPIGateway(this.requestURL, requestOptions);
-            this.emit(LogEvents.onSuccessful, `${new Date(logRequestBody.timeStamp * 1000).toISOString()} message ${logRequestBody.messageType} sent`)
+            // delete this.measurements[measure.name];
+            //TODO: add function for building log request
+            this.emit(LogEvents.onSuccessful, `${new Date(logRequestBody.timeStamp * 1000).toISOString()} - ${logRequestBody.eventId}`)
         } catch (error) {
+            //TODO: add custom Error function for describe errors
             this.emit(LogEvents.onError, `ERROR: ${error.message} / ${error.response ? error.response : ""}`)
         }
 
@@ -100,4 +106,9 @@ class Messaging extends EventEmitter {
             throw error;
         }
     }
+}
+
+module.exports = {
+    createValueTrackingClient,
+    LogEvents
 }

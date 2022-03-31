@@ -22,7 +22,7 @@ export type MetricsExtraOptions = {
 export class Metrics extends EventEmitter {
     constructor(options: MetricsOptions);
     startMeasure(name: string) : (extraOptions: MetricsExtraOptions) => void;
-    on(eventName: LogEvents, callback: (text: string) => void);
+    on(eventName: LogEvents, callback: (text: string) => void): this;
 }
 
 export function createMetricsClient(options: MetricsOptions) : Metrics;

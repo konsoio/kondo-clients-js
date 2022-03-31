@@ -11,3 +11,4 @@ test
 **/**/coverage
 **/**/dist
 .idea
+tests
